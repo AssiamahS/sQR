@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic QR Code Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #qrcode {
+            margin-top: 20px;
+            display: inline-block; /* Ensures div respects its content width */
+        }
+    </style>
+</head>
+<body>
+    <h2>Dynamic QR Code Generator</h2>
+    <p>Enter a URL and click 'Generate QR Code' to create a QR code that redirects to that URL.</p>
+    <div>
+        <input type="text" id="urlInput" placeholder="Enter URL">
+        <button onclick="generateQR()">Generate QR Code</button>
+    </div>
+    <div id="qrcode"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
